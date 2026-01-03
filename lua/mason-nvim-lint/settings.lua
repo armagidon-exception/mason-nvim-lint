@@ -21,7 +21,14 @@ local DEFAULT_SETTINGS = {
     -- A list of linters to not install using Mason.
     -- This setting has no relation with the`ensure_installed` setting.
     -- It will only impacts linters set up via nvim-lint.
+    ---@type string[]
     ignore_install = {},
+
+    ---@class MasonNvimLintSettings.AutoEnable
+    auto_enable = {
+        enabled = true,
+        notify = true
+    }
 }
 
 M._DEFAULT_SETTINGS = DEFAULT_SETTINGS
