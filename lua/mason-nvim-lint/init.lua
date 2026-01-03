@@ -31,6 +31,8 @@ function M.setup(config)
     if settings.current.automatic_installation then
         require "mason-nvim-lint.auto_install" ()
     end
+
+    require'mason-nvim-lint.auto_discover'()
 end
 
 return M
