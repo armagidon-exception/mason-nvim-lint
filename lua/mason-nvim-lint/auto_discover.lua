@@ -43,7 +43,7 @@ local function auto_discover()
 end
 
 return function()
-    if Config.config.auto_enable.enabled then
+    if Config.current.auto_enable.enabled then
         local discovered = auto_discover()
         local current_linters = require("lint").linters_by_ft or {}
 
