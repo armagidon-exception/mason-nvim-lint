@@ -64,4 +64,11 @@ M.nvimlint_to_package = {
 
 M.package_to_nvimlint = _.invert(M.nvimlint_to_package)
 
+M.language_to_ft = {
+    ["c++"] = { "cpp" },
+    ["c#"] = { "csharp" },
+    jsx = { "javascriptreact" },
+    tsx = { "typescriptreact" },
+}
+
 return M
